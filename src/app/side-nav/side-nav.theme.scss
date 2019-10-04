@@ -1,0 +1,12 @@
+@import "~@angular/material/theming";
+
+@mixin side-nav-theme($theme) {
+  $accent: map-get($theme, accent);
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+
+  .side-nav-container {
+    background-color: mat-color($accent, 50);
+    border-top: 0.05rem solid mat-color($accent,100);
+  }
+}

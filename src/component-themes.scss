@@ -1,0 +1,8 @@
+@import './app/nav/nav.theme.scss';
+@import './app/side-nav/side-nav.theme.scss';
+
+@mixin app-comp-themes($theme) {
+    @include nav-theme($theme);
+    @include side-nav-theme($theme);
+  }
+  
